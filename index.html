@@ -1,3 +1,4 @@
+<!--
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,4 +11,37 @@
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>AI Image Generator</h1>
+  <div class="image-area" id="imageDisplay">
+    <span class="placeholder-text">Image will appear here</span>
+  </div>
+  <div class="input-group">
+    <input
+            type="text"
+            id="promptInput"
+            placeholder="Enter your image prompt..."
+            maxlength="200"
+    >
+    <button id="generateBtn">
+      <span class="spinner"></span>
+      <span>Generate</span>
+    </button>
+  </div>
+  <p class="error" id="errorText"></p>
+</div>
+<script src="server-claude-ai.js">
+</script>
+</body>
 </html>
